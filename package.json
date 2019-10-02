@@ -1,0 +1,27 @@
+{
+  "name": "aircnc",
+  "version": "1.0.0",
+  "description": "sistema criado para melhorar os conhecimentos de nodejs, react e react-native com a base no curso da rocketseat: semana omnistack9.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savio777/aircnc_semana_omnistack.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "nodejs",
+    "express",
+    "socket.io",
+    "mongodb"
+  ],
+  "author": "savio777",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/savio777/aircnc_semana_omnistack/issues"
+  },
+  "homepage": "https://github.com/savio777/aircnc_semana_omnistack#readme"
+}
