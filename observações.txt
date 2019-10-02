@@ -1,0 +1,11 @@
+// VERBOS DE UMA API
+// GET, POST, PUT, DELETE
+
+// verbos do controller
+// index, show, store, update, destroy
+// index~> listagem de dados
+// show~> listar um dados em específico
+// store~> criar um dado
+// update~> atualizar um dado
+// destroy~> apagar um dado
+
