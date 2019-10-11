@@ -1,0 +1,18 @@
+// arquivo de configuração do vscode utilizada na criação da aplicação
+// Preferences: Open Settings (JSON)
+{
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {},
+  "window.zoomLevel": 0,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+  },
+  "editor.rulers": [
+    95,
+    120
+  ]
+}
