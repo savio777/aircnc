@@ -9,4 +9,6 @@
 // update~> atualizar um dado
 // destroy~> apagar um dado
 
+// com o cors é possível definir urls que vão poder acessar o servidor
+//app.use(cors({ origin: 'http://localhost:3000' }))
 
