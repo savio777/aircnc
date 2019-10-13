@@ -8,7 +8,8 @@ module.exports = {
         filename: (req, file, callback) => {
             const ext = path.extname(file.originalname)
             const name = path.basename(file.originalname, ext)
-            callback(null, `${name}-${Date.now()}${ext}`)
+            // correção de bug no frontend com regex para apagar espaços em branco
+            callback(null, `${name.replace(/\s/gi, '')}-${Date.now()}${ext}`)
         }
     })
 }
