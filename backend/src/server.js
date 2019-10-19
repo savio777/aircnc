@@ -31,7 +31,7 @@ const httpServer = http.createServer(app)
 const httpsServer = https.createServer({ key: privateKey, cert: publicKey }, app)
 
 httpServer.listen(portHttp, () => {
-    console.log(`server is running in https://localhost:${portHttp}`)
+    console.log(`server is running in http://localhost:${portHttp}`)
 })
 
 httpsServer.listen(portHttps, () => {
