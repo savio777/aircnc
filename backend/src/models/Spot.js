@@ -23,7 +23,7 @@ const SpotSchema = new mongoose.Schema({
 })
 
 SpotSchema.virtual('thumbnail_url').get(function () {
-    return `http://localhost:7777/files/${this.thumbnail}`
+    return `https://localhost:7777/files/${this.thumbnail}`
 })
 
 module.exports = mongoose.model('Spots', SpotSchema)

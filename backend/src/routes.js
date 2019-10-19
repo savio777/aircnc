@@ -12,6 +12,11 @@ const uploadConfig = require('./config/upload')
 
 const upload = multer(uploadConfig)
 
+//test
+router.get('/', (req, res) => {
+    res.send(':)')
+})
+
 // sessions
 router.post('/sessions', SessionControlller.store)
 
