@@ -8,7 +8,8 @@ import {
   StyleSheet,
   StatusBar,
   Image,
-  AsyncStorage
+  AsyncStorage,
+  SafeAreaView
 } from 'react-native'
 
 import api from '../services/api'
@@ -44,7 +45,7 @@ function Login({ navigation }) {
 
   return (
     <>
-      <View style={style.container}>
+      <SafeAreaView style={style.container}>
         <StatusBar backgroundColor='#fff' barStyle='dark-content' />
         <Image source={logo} />
         <View style={style.form}>
@@ -75,7 +76,7 @@ function Login({ navigation }) {
             <Text style={style.textButton}>Encontrar Spots</Text>
           </TouchableOpacity>
         </View>
-      </View>
+      </SafeAreaView>
     </>
   )
 }
