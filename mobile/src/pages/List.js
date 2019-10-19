@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import {
-  View,
-  Text,
+  TouchableOpacity,
   AsyncStorage,
   Image,
   SafeAreaView,
@@ -15,7 +14,7 @@ import SpotList from '../components/SpotList'
 
 import logo from '../../assets/logo.png'
 
-function List() {
+function List({ navigation }) {
 
   const [techs, setTechs] = useState([])
 
@@ -28,11 +27,20 @@ function List() {
     })
   }, [])
 
+  function logOut() {
+    AsyncStorage.removeItem('user')
+    AsyncStorage.removeItem('techs')
+
+    navigation.navigate('Login')
+  }
+
   return (
     <>
       <StatusBar backgroundColor='#fff' barStyle='dark-content' />
       <SafeAreaView style={style.container} >
-        <Image style={style.logo} source={logo} />
+        <TouchableOpacity onPress={logOut}>
+          <Image on style={style.logo} source={logo} />
+        </TouchableOpacity>
         <ScrollView>
           {(techs) && (
             techs.map((value) => (<SpotList key={value} tech={value} />))
